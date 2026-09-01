@@ -1,0 +1,6 @@
+attendance-agentforces build 2026.08.18-server23-mysql
+storage: MySQL via jdbc/MySQLPool
+checkin: background HTTP endpoint
+username: database-reserved
+private-token: generated server-side; SHA-256 hash stored in MySQL
+rules: Monday-Friday, 05:00-15:00 office timezone

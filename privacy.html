@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1X0NG9982C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1X0NG9982C');
+</script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#111827"><meta name="description" content="Privacy information for Office Attendance Tracker, including private-token access and server-side attendance storage."><meta name="robots" content="index,follow"><link rel="canonical" href="https://attendance.agentforces.ca/privacy.html"><title>Privacy | Office Attendance Tracker</title><link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png?v=20260818-23"><link rel="stylesheet" href="assets/styles.css?v=20260818-23"></head>
+<body><main class="content-shell"><header class="content-header"><a href="/" class="brand-mark small" aria-label="Office Attendance Tracker home">✓</a><div><p class="eyebrow">OFFICE ATTENDANCE TRACKER</p><strong>Privacy</strong></div></header><article class="content-page">
+<p class="eyebrow">PRIVACY</p><h1>Private attendance without continuous location tracking</h1>
+<p>Office Attendance Tracker uses a reserved username and a private random token. Attendance records are stored in the application MySQL database so an iPhone Shortcut can record a visit without opening the web app.</p>
+<h2>What is stored</h2><p>The server stores your username, a one-way hash of your private token, and attendance records such as date, office label, check-in time, source and office time zone. Your raw private token is not stored in MySQL; only its SHA-256 hash is stored.</p>
+<h2>Location</h2><p>The web app does not receive continuous GPS coordinates. Your iPhone Shortcuts Arrive automation handles the location geofence. The server receives an office label when that automation calls the private check-in URL.</p>
+<h2>Your private token</h2><p>The private token is the credential to your attendance account. Keep it and generated Shortcut URLs private. The browser stores the token locally on devices you connect.</p>
+<h2>Server logs</h2><p>A Shortcut URL contains the private token. Configure the web server or reverse proxy not to log query strings for the <code>/checkin</code> endpoint. Infrastructure outside this application may otherwise record requested URLs.</p>
+<h2>Backups</h2><p>You can export attendance history as a JSON file and import it later. The exported backup does not need to include your private token.</p>
+<div class="cta-row"><a class="primary" href="/">Back to tracker</a></div></article><footer class="content-footer"><a href="/">Office Attendance Tracker</a> · <a href="guide.html">iPhone guide</a></footer></main></body></html>

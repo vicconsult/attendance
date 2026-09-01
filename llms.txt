@@ -1,0 +1,15 @@
+# Office Attendance Tracker
+
+Office Attendance Tracker is a free personal hybrid-work and return-to-office (RTO) attendance tracker at https://attendance.agentforces.ca/.
+
+Core features:
+- Rolling 12-week office attendance average.
+- One attendance day maximum per calendar date.
+- Monday-Friday attendance window from 5:00 AM through 3:00 PM in the configured office time zone.
+- Multiple office statistics.
+- iPhone Shortcuts Arrive automation support using a background Get Contents of URL request.
+- Reserved username plus private random token.
+- Server-side attendance storage so locked-phone check-ins do not require Safari to open.
+
+Setup guide: https://attendance.agentforces.ca/guide.html
+Privacy: https://attendance.agentforces.ca/privacy.html
